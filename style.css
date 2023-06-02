@@ -1,0 +1,102 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(235, 18%, 26%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  width: 280px;
+}
+.text h1 {
+  font-size: 34px;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 0;
+}
+.text_p {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  width: 275px;
+}
+.checklist {
+  display: flex;
+  align-items: center;
+}
+.checklist img {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+}
+.checklist p {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+}
+.image img {
+  height: 400px;
+}
+.email {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  font-size: 10px;
+}
+.email_input {
+  padding: 10px;
+  padding-right: 50px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 1px solid hsl(231, 7%, 60%);
+  width: 65%;
+  cursor: pointer;
+}
+button {
+  margin-top: 10px;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 4px;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+.mobile {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+  .card {
+    flex-direction: column-reverse;
+    /* width: 100%; */
+  }
+  .text {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: start;
+  }
+  .text h1 {
+    text-align: start;
+  }
+}
